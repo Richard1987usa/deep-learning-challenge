@@ -1,0 +1,33 @@
+Title: Report on the Performance of the Deep Learning Model for Alphabet Soup
+
+1. Overview of the Analysis:
+The purpose of this analysis is to evaluate the performance of the deep learning model created for Alphabet Soup, a venture capital firm. The model aims to predict the success of applicants funded by Alphabet Soup based on various features.
+
+2. Results:
+Data Preprocessing:
+* Target Variable: The target variable for the model is the 'IS_SUCCESSFUL' column from the application_df dataset.
+* Feature Variables: All columns from the application_df dataset, except for the target variable 'IS_SUCCESSFUL', are considered as features for the model.
+* Variables Removed: The 'EIN' and 'NAME' columns were removed from the input data as they were neither targets nor features.
+
+Compiling, Training, and Evaluating the Model:
+* Model Architecture:
+  - First Attempt: The model used 8 neurons in the first hidden layer and 5 neurons in the second hidden layer. These values were chosen as initial guesses for iteration in subsequent attempts.
+* Target Model Performance:
+  - The model was unable to achieve the desired 75% accuracy target.
+* Attempts to Increase Model Performance:
+  - Added more layers to the model.
+  - Removed additional columns from the input data.
+  - Increased the number of hidden nodes in each layer.
+  - Experimented with different activation functions for each layer.
+
+3. Summary:
+The deep learning model achieved an accuracy of approximately 73% in predicting the success of applicants funded by Alphabet Soup. Despite attempts to improve the model's performance by modifying the architecture, removing columns, and adjusting activation functions, the desired 75% accuracy target was not reached.
+
+Recommendation:
+To potentially improve the classification problem, it is recommended to explore a different model that exhibits a stronger correlation between the input features and the output. This can be achieved through the following steps:
+1. Perform additional data cleaning and preprocessing to ensure the input data is of high quality and relevant to the problem at hand.
+2. Investigate and select a model architecture that is well-suited for the specific classification task, considering the nature of the data and the desired output.
+3. Experiment with different activation functions and hyperparameters to optimize the model's performance.
+4. Iterate through various model configurations and evaluate their performance until a satisfactory accuracy is achieved.
+
+By focusing on data quality, selecting an appropriate model architecture, and fine-tuning the model's parameters, it is possible to develop a model that better captures the underlying patterns and relationships in the data, leading to improved prediction accuracy for the success of Alphabet Soup's applicants.
